@@ -1,0 +1,68 @@
+/* Header.css */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-container img {
+  margin-right: -15px;
+}
+
+.headers-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headers-container img {
+  margin-right: -15px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer img {
+  margin-right: -12px;
+}
+
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #364F6B;
+  display: inline-block;
+  animation: bounce 1.4s infinite ease-in-out;
+}
+
+.spinner .bounce2 {
+  background-color: #3FC1C9;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce3 {
+  background-color: #FC5185;
+  animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.75);
+  }
+}
