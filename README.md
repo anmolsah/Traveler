@@ -1,5 +1,3 @@
-Here’s a short and beautiful README file for your website, RAHi:
-
 ---
 
 # RAHi 🌴✈️
