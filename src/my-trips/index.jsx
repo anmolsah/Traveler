@@ -3,6 +3,7 @@ import { collection, getDocs, query, where, doc, deleteDoc } from "firebase/fire
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import UserTripCard from "./components/UserTripCard";
+import NoTrip from "./components/NoTrip";
 
 function MyTrips() {
   const navigate = useNavigate();
@@ -44,21 +45,18 @@ function MyTrips() {
 
   return (
     <div className="sm:px-10 md:px-32 lg:px-56 xl:px-72 px-5 mt-10">
-      <h2 className="font-bold text-3xl">My Trips</h2>
+    <h2 className="font-bold text-3xl">My Trips</h2>
 
+    {userTrips.length > 0 ? (
       <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-10">
-        {userTrips.length > 0
-          ? userTrips.map((trip) => (
-              <UserTripCard trip={trip} key={trip.id} onDelete={() => deleteTrip(trip.id)} />
-            ))
-          : [1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => (
-              <div
-                key={index}
-                className="h-[250px] w-full bg-slate-300 animate-pulse rounded-xl"
-              ></div>
-            ))}
+        {userTrips.map((trip) => (
+          <UserTripCard trip={trip} key={trip.id} onDelete={() => deleteTrip(trip.id)} />
+        ))}
       </div>
-    </div>
+    ) : (
+      <NoTrip />
+    )}
+  </div>
   );
 }
 
