@@ -7,10 +7,13 @@ function Hero() {
   const videoRef = useRef(null);
 
   const videoSources = [
+    "/vidoes/v-0.mp4",
     "/vidoes/v-1.mp4",
     "/vidoes/v-2.mp4",
     "/vidoes/v-3.mp4",
     "/vidoes/v-4.mp4",
+    "/vidoes/v-5.mp4",
+    "/vidoes/v-6.mp4",
   ];
 
   useEffect(() => {
