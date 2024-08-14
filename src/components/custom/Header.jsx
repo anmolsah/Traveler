@@ -51,7 +51,7 @@ function Header() {
 
   return (
     <div className="p-3 shadow-md flex justify-between items-center px-5">
-      <a href="/" className="flex items-center gap-2">
+      <a href="/" className="flex items-center">
         <img src="/rahi-logo.png" className="w-10 h-auto sm:w-12" alt="Logo" />
         <h1 className="font-bold text-2xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#364F6B] to-[#FC5185]">
           RAHi
@@ -107,7 +107,7 @@ function Header() {
         <DialogContent>
           <DialogHeader>
             <DialogDescription>
-              <div className="flex items-center justify-center gap-2 mb-5">
+              <div className="flex items-center justify-center mb-5">
                 <img src="/rahi-logo.png" className="w-10 h-auto sm:w-12" alt="Logo" />
                 <h1 className="font-bold text-2xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#364F6B] to-[#FC5185]">
                   RAHi
