@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { chatSession } from "@/config/AiMOdal";
+import { chatSession } from "@/config/AiModal";
 import {
   AI_PROMPT,
   SelectBudgetOptions,
