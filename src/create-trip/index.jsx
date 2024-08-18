@@ -246,20 +246,21 @@ function CreateTrip() {
         </Button>
       </div>
 
-      <Dialog open={openDialog}>
+      <Dialog open={openDialog} onOpenChange={setOpenDialog}>
         <DialogContent>
           <DialogHeader>
             <DialogDescription>
-              <img src="/rahi.png" className="w-32 h-auto m-auto" />
-              <h2 className="font-bold text-lg mt-7 text-[#364F6B]">
-                Sign In With Google
-              </h2>
-              <p className="text-gray-500">
-                Sign in to Rahi with Google authentication securely!
-              </p>
+              <div className="flex items-center justify-center mb-5">
+                <img src="/rahi-logo.png" className="w-10 h-auto sm:w-12" alt="Logo" />
+                <h1 className="font-bold text-2xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#364F6B] to-[#FC5185]">
+                  RAHi
+                </h1>
+              </div>
+              <h2 className="font-bold text-lg mt-7">Sign In With Google</h2>
+              <p>Sign in to Rahi with Google authentication securely!</p>
               <Button
                 onClick={login}
-                className="w-full mt-5 flex gap-4 items-center bg-[#3FC1C9] hover:bg-[#FC5185] text-white"
+                className="w-full mt-5 flex gap-4 items-center"
               >
                 <FcGoogle className="h-7 w-7" />
                 Sign In With Google
