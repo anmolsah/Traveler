@@ -28,7 +28,6 @@
   margin-right: -12px;
 }
 
-
 .spinner {
   width: 100px;
   height: 100px;
@@ -40,23 +39,27 @@
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  background-color: #364F6B;
+  background-color: #364f6b;
   display: inline-block;
   animation: bounce 1.4s infinite ease-in-out;
 }
 
 .spinner .bounce2 {
-  background-color: #3FC1C9;
+  background-color: #3fc1c9;
   animation-delay: -0.32s;
 }
 
 .spinner .bounce3 {
-  background-color: #FC5185;
+  background-color: #fc5185;
   animation-delay: -0.16s;
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: scale(0);
   }
   40% {
