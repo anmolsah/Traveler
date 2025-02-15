@@ -108,7 +108,11 @@ function Header() {
           <DialogHeader>
             <DialogDescription>
               <div className="flex items-center justify-center mb-5">
-                <img src="/rahi-logo.png" className="w-10 h-auto sm:w-12" alt="Logo" />
+                <img
+                  src="/rahi-logo.png"
+                  className="w-10 h-auto sm:w-12"
+                  alt="Logo"
+                />
                 <h1 className="font-bold text-2xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#364F6B] to-[#FC5185]">
                   RAHi
                 </h1>
