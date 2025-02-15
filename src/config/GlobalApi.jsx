@@ -1,4 +1,3 @@
-
 import axios from "axios";
 
 const BASE_URL = "https://places.googleapis.com/v1/places:searchText";
