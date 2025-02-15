@@ -1,6 +1,6 @@
-import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import '../../App.css'
+import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import "../../App.css";
 
 function Footer() {
   return (

@@ -1,11 +1,9 @@
-
-
 import { Button } from "@/components/ui/button";
 import { GetPlaceDetails, PHOTO_REF_URL } from "@/config/GlobalApi";
 import React, { useEffect, useState } from "react";
 import { BsSendFill } from "react-icons/bs";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function InfoSection({ trip }) {
@@ -46,7 +44,7 @@ function InfoSection({ trip }) {
     const shareData = {
       title: "My Trip",
       text: `Check out my trip to ${trip?.userSelection?.location?.label}!`,
-      url: window.location.href, 
+      url: window.location.href,
     };
 
     try {
@@ -54,7 +52,9 @@ function InfoSection({ trip }) {
         await navigator.share(shareData);
         console.log("Trip shared successfully!");
       } else {
-        console.warn("Web Share API not supported. Fallback to manual sharing.");
+        console.warn(
+          "Web Share API not supported. Fallback to manual sharing."
+        );
       }
     } catch (error) {
       console.error("Error sharing trip:", error);
@@ -93,7 +93,10 @@ function InfoSection({ trip }) {
             </h2>
           </div>
         </div>
-        <Button onClick={handleShare} className="bg-[#364F6B] text-white hover:bg-[#3FC1C9] mt-3 md:mt-0">
+        <Button
+          onClick={handleShare}
+          className="bg-[#364F6B] text-white hover:bg-[#3FC1C9] mt-3 md:mt-0"
+        >
           <BsSendFill />
         </Button>
       </div>
@@ -102,4 +105,3 @@ function InfoSection({ trip }) {
 }
 
 export default InfoSection;
-
