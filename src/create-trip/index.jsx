@@ -123,7 +123,7 @@ function CreateTrip() {
   const GetUserProfile = (tokenInfo) => {
     axios
       .get(
-        `https://www.googleapis.com/oauth2/v1/userinfo?access_token=${tokenInfo?.access_token}`, // Fixed the typo here
+        `https://www.googleapis.com/oauth2/v1/userinfo?access_token=${tokenInfo?.access_token}`,
         {
           headers: {
             Authorization: `Bearer ${tokenInfo?.access_token}`,
@@ -251,7 +251,11 @@ function CreateTrip() {
           <DialogHeader>
             <DialogDescription>
               <div className="flex items-center justify-center mb-5">
-                <img src="/rahi-logo.png" className="w-10 h-auto sm:w-12" alt="Logo" />
+                <img
+                  src="/rahi-logo.png"
+                  className="w-10 h-auto sm:w-12"
+                  alt="Logo"
+                />
                 <h1 className="font-bold text-2xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#364F6B] to-[#FC5185]">
                   RAHi
                 </h1>
