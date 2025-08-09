@@ -14,13 +14,24 @@ import {
 } from "@/components/ui/dialog";
 import axios from "axios";
 import { FcGoogle } from "react-icons/fc";
+import { FaPlus, FaSuitcase, FaSignOutAlt, FaUser, FaBars, FaTimes } from "react-icons/fa";
 import "../../App.css";
 
 function Header() {
   const user = JSON.parse(localStorage.getItem("user"));
   const [openDialog, setOpenDialog] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {});
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 10;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const login = useGoogleLogin({
     onSuccess: (tokenInfo) => GetUserProfile(tokenInfo),
