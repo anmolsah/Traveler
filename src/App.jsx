@@ -1,11 +1,12 @@
 import "./App.css";
 import Hero from "./components/custom/Hero";
-import { Button } from "./components/ui/button";
+import FloatingActionButton from "./components/custom/FloatingActionButton";
 
 function App() {
   return (
     <>
       <Hero />
+      <FloatingActionButton />
     </>
   );
 }
