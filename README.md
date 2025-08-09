@@ -80,7 +80,7 @@ RAHi is an intelligent travel planning application that uses AI to create person
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:anmolsah/Traveler.git
    cd rahi
    ```
 
@@ -131,24 +131,6 @@ RAHi is an intelligent travel planning application that uses AI to create person
 5. **Share your trip** with friends and family
 6. **Manage your trips** in the My Trips section
 
-## 🔄 Recent Updates
-
-### Hotel Recommendation Fix
-- ✅ Fixed data structure compatibility issues
-- ✅ Added error handling for API calls
-- ✅ Improved fallback image handling
-- ✅ Enhanced hotel card design with amenities
-
-### New Feature Additions
-- ✅ Weather integration with real-time data
-- ✅ Comprehensive budget tracking system
-- ✅ AI-powered packing list generator
-- ✅ Local transportation guide
-- ✅ Cultural and practical information hub
-- ✅ Currency converter with live rates
-- ✅ Advanced trip sharing capabilities
-- ✅ Enhanced My Trips with search and filters
-- ✅ Smart navigation system
 
 ## 🚀 Deployment
 
