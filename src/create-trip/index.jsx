@@ -571,7 +571,7 @@ function CreateTrip() {
         {loading && (
           <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center">
             <div className="bg-white rounded-2xl p-8 text-center max-w-md mx-4">
-              <div className="text-6xl mb-4 flex justify-between items-center">
+              <div className="text-6xl mb-4 flex justify-center items-center">
                 <img src="/rahi-logo.png" className="w-10 h-auto sm:w-12" alt="Logo" />
                 <h1 className="font-bold text-2xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#364F6B] to-[#FC5185]">
                   RAHi
@@ -583,7 +583,9 @@ function CreateTrip() {
               <p className="text-gray-600 mb-6">
                 Our AI is analyzing thousands of options to create your personalized itinerary...
               </p>
-              <Spinner />
+              <div className="flex justify-center items-center">
+                <Spinner />
+              </div>
               <div className="mt-4 text-sm text-gray-500">
                 This usually takes 10-30 seconds
               </div>
@@ -597,7 +599,7 @@ function CreateTrip() {
             <DialogHeader>
               <DialogDescription>
                 <div className="text-center">
-                  <div className="flex items-center mb-6">
+                  <div className="flex justify-center items-center mb-6">
                     <img
                       src="/rahi-logo.png"
                       className="w-12 h-auto"

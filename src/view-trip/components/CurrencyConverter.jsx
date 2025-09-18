@@ -39,7 +39,7 @@ function CurrencyConverter({ trip }) {
 
         setLoading(true);
         try {
-            // Using a free exchange rate API (you might want to use a more reliable one)
+            // Using a free exchange rate API 
             const response = await fetch(
                 `https://api.exchangerate-api.com/v4/latest/${fromCurrency}`
             );
@@ -55,7 +55,7 @@ function CurrencyConverter({ trip }) {
             }
         } catch (error) {
             console.error("Currency conversion error:", error);
-            // Fallback to approximate rates for demo
+        
             const approximateRates = {
                 "USD-EUR": 0.85,
                 "EUR-USD": 1.18,
